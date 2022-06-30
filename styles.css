@@ -5,39 +5,153 @@
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   color: #464646;
   background-color: #FFFEE9;
   min-height: 100vh;
 }
-.front-page{
 
+.hero-container{
+  
   height: 100vh;
+  
 }
-.container{
-  height: 75%;
+nav { 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-top: 3rem;
-  flex-wrap: wrap;
-
+  height: 9%;
+  padding: 0 2%;
 }
-.hero-image-wrapper{
-  height: 100%;
+.hamburger{
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+.hamburger .bar, .hamburger:after, .hamburger:before{
+  width: 100%;
+  height: 5px;
+  background-color: #464646;
+  content: '';
+  margin: 6px 0;
+  display: block;
+  border-radius: 3px;
+
+  
+}
+nav ul.show{
+  display: flex
+}
+.hero-content{
+  padding: 0 5%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  
+  height: 85%;
+}
+
+.hero-image {
+  width: 400px;
+}
+.arrow-wrapper{
+  display: block;
+  text-decoration: none;
+  color: #464646;
+}
+.details{
+  
 }
 .skills{
-  margin-left: 3rem;
+  padding: 0 2%;
+}
+.skills h2 {
+    padding-top: 1%;
+}
+.skills-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.skill-icon-container{
+  padding: 1% 0;
+  background-color: rgba(179, 179, 179, 0.93);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 720px;
+}
+.logo{
+  height: 70%;
+}
+.skill{
+  background-color: white;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 1%;
+  padding: 1%;
+}
+.skill img{
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+}
+.skills p {
+  width: 40%;
+  margin-right: 2%;
+  
+}
+.about-me{
+  padding: 2%;
+}
+.about-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about-content img{
+  grid-column: 1 / span 1;
+  width: 100%;
+}
+.about-text{
+  grid-column: 2 / span 1;
+  margin-left: 3%;
+}
+.contact{
+  margin-top: 2%;
+}
+
+.contact p {
+  margin-top: 2%;
+}
+.small-about-image{
+  display: none;
+}
+i {
+  text-align: center;
+  width: 100%;
 }
 
 ul {
   list-style: none;
 }
 
-a{
+nav a{
   text-decoration: none;
   color: #464646;
   font-family: 'Lato', sans-serif;
@@ -50,28 +164,122 @@ a{
 nav ul {
   display: flex;
   justify-content: flex-end;
-  margin-right: 4rem;
-  margin-top: 1.5rem;
   gap: 51px;
+  align-items: center;
 }
 
 h1{
   font-size: 30px;
   line-height: 49px;
   font-weight: 400;
-  flex-grow: 2;
+}
+p{
+  font-size: 18px;
 
 }
-
-img{
-  height: 100%;
-  width: auto;
-}
-
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
+  font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: 400;
+  color: black;
 }
 
+hr {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h3{
+  text-align: center;
+  font-size: 12px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1vw;
+}
+form input, form textarea{
+  border: 0;
+  background-color: #F2EFEF;
+  margin: 0.5vw 0;
+  padding: 0.5vw;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+form button{
+  background: #A4CDC5;
+  font-size: 18px;
+  width: 150px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer; 
+  margin: 0.5vw 0;
+  padding: 0.5vw;
+}
+form button:hover{
+  background: #B5EFA1;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
+}
+
+
+
+@media only screen and (max-width: 1020px){
+  .skills-content{
+    flex-wrap: wrap;
+  }
+  .skills p{
+    width: 100%;
+    margin: 2% 0;
+  }
+  .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-text{
+    margin-left: 0;
+    margin-top: 2%;
+  }
+  .large-about-image{
+    display: none;
+  }
+  .small-about-image{
+    display: block;
+    width: 75%;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 900px){
+  .hero-image{
+    display: none;
+  }
+  .hero-content{
+    align-content: center;
+    justify-content: center;
+  }
+  .contact{
+    margin-top: 5%;
+  }
+}
+@media only screen and (max-width: 720px){
+  nav ul{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+}
+@media only screen and (max-width: 341px){
+  .skill{
+    width: 90px;
+    height: 90px;
+  }
+  .skill h3{
+    font-size: 11px;
+  }
+  
+}
