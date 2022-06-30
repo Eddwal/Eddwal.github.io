@@ -27,29 +27,36 @@ nav {
   height: 9%;
   padding: 0 2%;
 }
-.hamburger{
-  position: relative;
-  display: block;
-  width: 35px;
-  height: 35px;
-  background-color: transparent;
-  border: 0;
-  font-size: 30px;
-  cursor: pointer;
-}
-.hamburger .bar, .hamburger:after, .hamburger:before{
-  width: 100%;
-  height: 5px;
-  background-color: #464646;
-  content: '';
-  margin: 6px 0;
-  display: block;
-  border-radius: 3px;
-<<<<<<< HEAD
 
-  
-<<<<<<< HEAD
+nav ul.show{
+  display: flex
 }
+.mobile-nav-ul{
+  display: none;
+}
+.mobile-nav-ul.is-active{
+  display: flex;
+  background-color: #A4CDC5;
+}
+.hero-content{
+  padding: 0 5%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  
+  height: 85%;
+}
+
+.hero-image {
+  max-height: 80%;
+}
+.arrow-wrapper{
+  display: block;
+  text-decoration: none;
+  color: #464646;
+}
+
 nav ul.show{
   display: flex
 }
@@ -63,48 +70,12 @@ nav ul.show{
   height: 85%;
 }
 
-.hero-image {
-  width: 400px;
-}
 .arrow-wrapper{
   display: block;
   text-decoration: none;
   color: #464646;
 }
-=======
-=======
 
-  
->>>>>>> origin/main
-}
-nav ul.show{
-  display: flex
-}
-.hero-content{
-  padding: 0 5%;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  
-  height: 85%;
-}
-
-.hero-image {
-  width: 400px;
-}
-.arrow-wrapper{
-  display: block;
-  text-decoration: none;
-  color: #464646;
-}
-<<<<<<< HEAD
->>>>>>> origin/main
-=======
->>>>>>> origin/main
-.details{
-  
-}
 .skills{
   padding: 0 2%;
 }
@@ -125,10 +96,9 @@ nav ul.show{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 720px;
 }
 .logo{
-  height: 70%;
+  height: 60%;
 }
 .skill{
   background-color: white;
@@ -217,58 +187,10 @@ h2 {
   letter-spacing: 2px;
   font-weight: 400;
   color: black;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/main
-=======
->>>>>>> origin/main
 }
 
 hr {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/main
-}
-h3{
-  text-align: center;
-  font-size: 12px;
-}
-form{
-  display: flex;
-  flex-direction: column;
-  padding-top: 1vw;
-}
-form input, form textarea{
-  border: 0;
-  background-color: #F2EFEF;
-  margin: 0.5vw 0;
-  padding: 0.5vw;
-  border-radius: 10px;
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-}
-form button{
-  background: #A4CDC5;
-  font-size: 18px;
-  width: 150px;
-  border-radius: 30px;
-  border: 0;
-  outline: 0;
-  cursor: pointer; 
-  margin: 0.5vw 0;
-  padding: 0.5vw;
-}
-form button:hover{
-  background: #B5EFA1;
-  transition-duration: 100ms;
-  transition-timing-function: ease-in;
-=======
->>>>>>> origin/main
 }
 h3{
   text-align: center;
@@ -305,11 +227,42 @@ form button:hover{
   transition-duration: 100ms;
   transition-timing-function: ease-in;
 }
+h3{
+  text-align: center;
+  font-size: 12px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1vw;
+}
+form input, form textarea{
+  border: 0;
+  background-color: #F2EFEF;
+  margin: 0.5vw 0;
+  padding: 0.5vw;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+form button{
+  background: #A4CDC5;
+  font-size: 18px;
+  width: 150px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer; 
+  margin: 0.5vw 0;
+  padding: 0.5vw;
+}
+form button:hover{
+  background: #B5EFA1;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
+}
 
-
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 hr {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -347,8 +300,6 @@ form button:hover{
   background: #B5EFA1;
   transition-duration: 100ms;
   transition-timing-function: ease-in;
-=======
->>>>>>> origin/main
 }
 h3{
   text-align: center;
@@ -386,16 +337,6 @@ form button:hover{
   transition-timing-function: ease-in;
 }
 
-
-
-<<<<<<< HEAD
-=======
->>>>>>> origin/main
-
-=======
->>>>>>> origin/main
-=======
->>>>>>> origin/main
 @media only screen and (max-width: 1020px){
   .skills-content{
     flex-wrap: wrap;
@@ -422,6 +363,15 @@ form button:hover{
     border-radius: 10px;
   }
 }
+@media screen and (min-height: 1300px) and (max-width: 1300px){
+  .hero-image{
+    display: none;
+  }
+  .hero-content{
+    align-content: center;
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 900px){
   .hero-image{
     display: none;
@@ -439,8 +389,37 @@ form button:hover{
     display: none;
   }
   .hamburger{
+    position: relative;
     display: block;
+    width: 35px;
+    cursor: pointer;
+  
+    background-color: transparent;
+    border: 0;
+  
+  
   }
+  .hamburger .bar, .hamburger:after, .hamburger:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #464646;
+    margin: 6px 0;
+    border-radius: 3px;
+    transition: 0.4s;
+  }
+  
+  .hamburger.is-active:before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  .hamburger.is-active .bar{
+    opacity: 0;
+  }
+  .hamburger.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+  
 }
 @media only screen and (max-width: 341px){
   .skill{
@@ -450,17 +429,4 @@ form button:hover{
   .skill h3{
     font-size: 11px;
   }
-  
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/main
-=======
-}
->>>>>>> origin/main
-=======
-}
->>>>>>> origin/main
