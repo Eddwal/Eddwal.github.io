@@ -184,8 +184,52 @@ h2 {
   letter-spacing: 2px;
   font-weight: 400;
   color: black;
+<<<<<<< HEAD
+=======
 }
 
+hr {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+>>>>>>> origin/main
+}
+h3{
+  text-align: center;
+  font-size: 12px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1vw;
+}
+form input, form textarea{
+  border: 0;
+  background-color: #F2EFEF;
+  margin: 0.5vw 0;
+  padding: 0.5vw;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+form button{
+  background: #A4CDC5;
+  font-size: 18px;
+  width: 150px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer; 
+  margin: 0.5vw 0;
+  padding: 0.5vw;
+}
+form button:hover{
+  background: #B5EFA1;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
+}
+
+
+<<<<<<< HEAD
 hr {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -226,6 +270,8 @@ form button:hover{
 }
 
 
+=======
+>>>>>>> origin/main
 
 @media only screen and (max-width: 1020px){
   .skills-content{
@@ -282,4 +328,8 @@ form button:hover{
     font-size: 11px;
   }
   
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main
