@@ -45,6 +45,7 @@ nav {
   margin: 6px 0;
   display: block;
   border-radius: 3px;
+<<<<<<< HEAD
 
   
 <<<<<<< HEAD
@@ -71,6 +72,10 @@ nav ul.show{
   color: #464646;
 }
 =======
+=======
+
+  
+>>>>>>> origin/main
 }
 nav ul.show{
   display: flex
@@ -93,6 +98,9 @@ nav ul.show{
   text-decoration: none;
   color: #464646;
 }
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main
 .details{
   
@@ -211,7 +219,10 @@ h2 {
   color: black;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/main
 =======
 >>>>>>> origin/main
 }
@@ -219,6 +230,44 @@ h2 {
 hr {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/main
+}
+h3{
+  text-align: center;
+  font-size: 12px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1vw;
+}
+form input, form textarea{
+  border: 0;
+  background-color: #F2EFEF;
+  margin: 0.5vw 0;
+  padding: 0.5vw;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+form button{
+  background: #A4CDC5;
+  font-size: 18px;
+  width: 150px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer; 
+  margin: 0.5vw 0;
+  padding: 0.5vw;
+}
+form button:hover{
+  background: #B5EFA1;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
+=======
 >>>>>>> origin/main
 }
 h3{
@@ -258,6 +307,8 @@ form button:hover{
 }
 
 
+
+<<<<<<< HEAD
 <<<<<<< HEAD
 hr {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -341,6 +392,8 @@ form button:hover{
 =======
 >>>>>>> origin/main
 
+=======
+>>>>>>> origin/main
 =======
 >>>>>>> origin/main
 @media only screen and (max-width: 1020px){
@@ -400,7 +453,11 @@ form button:hover{
   
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main
 =======
 }
 >>>>>>> origin/main
