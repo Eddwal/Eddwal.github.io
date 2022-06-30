@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -120,7 +120,6 @@ nav ul.show{
   
   height: 85%;
 }
-
 .arrow-wrapper{
   display: block;
   text-decoration: none;

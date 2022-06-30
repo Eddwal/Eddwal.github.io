@@ -5,14 +5,22 @@
     <meta charset="utf-8" />
     <title>Eddy's Portfolio Site</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/050696fd4c.js" crossorigin="anonymous"></script>
-
+    <script
+      src="https://kit.fontawesome.com/050696fd4c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main id="main">
       <div class="hero-container">
         <nav>
-          <img src="images/logo.png" class="logo"/>
+          <img src="images/logo.png" class="logo" />
           <button class="hamburger" id="hamburgrer">
             <div class="bar"></div>
           </button>
@@ -28,101 +36,154 @@
           </ul>
         </nav>
         <div class="hero-content">
-          <img src="images/PiaDruBru.png" class="hero-image" alt="Eddy sitting at a brewery with his dog next to him"/>
-            <h1>
-            Hi!<br />
-            My name is <b>Eddy Walsh!</b><br />
-            I’m a full stack developer<br />
-            and also {typewriter text}
-          </h1>        
+          <img
+            src="images/PiaDruBru.png"
+            class="hero-image"
+            alt="Eddy sitting at a brewery with his dog next to him"
+          />
+          <div>
+            <h1 id="hero-message">
+              Hi!<br />
+              My name is <b>Eddy Walsh!</b><br />
+              I’m a full stack developer<br />
+              and also:
+            </h1>
+            <h1 id="display"></h1>
+          </div>
         </div>
         <a href="#details" class="arrow-wrapper">
           <i class="fa-solid fa-arrow-down fa-2x"></i>
         </a>
       </div>
-      <hr>
+      <hr />
       <div class="details" id="details">
         <section class="skills" id="skills">
-            <h2>Skills</h2>
-            <div class="skills-content">
-            <p>These are skills that I currently have a high proficiency in, however this list is always changing as I love learning new skills and am always willing to learn any new tool for a product
-  </p>
+          <h2>Skills</h2>
+          <div class="skills-content">
+            <p>
+              These are skills that I currently have a high proficiency in,
+              however this list is always changing as I love learning new skills
+              and am always willing to learn any new tool for a product
+            </p>
             <div class="skill-icon-container">
-                  <div class="skill">
-                    <img src="images/java-logo.png"/>
-                    <h3>Java</h3>
-                  </div>
-                  <div class="skill">
-                    <img src="images/SpringBootLogo.png"/>
-                    <h3>Spring</h3>
-                  </div>
-                  <div class="skill">
-                    <img src="images/Microservices.png"/>
-                    <h3>Microservices</h3>
-                  </div>
-                  <div class="skill">
-                    <img src="images/AzureLogo.png"/>
-                    <h3>Azure</h3>
-                  </div>
-  
-                  <div class="skill">
-                    <img src="images/HTML-Logo.png"/>
-                    <h3>HTML</h3>
-                  </div>
-                  <div class="skill">
-                    <img src="images/CSS-Logo.png"/>
-                    <h3>CSS</h3>
-                  </div>
-  
-                  <div class="skill">
-                    <img src="images/JS-Logo.png"/>
-                    <h3>JS</h3>
-                  </div>
-                  <div class="skill">
-                    <img src="images/ReactLogo.png"/>
-                    <h3>React</h3>
-                  </div>
-  
-                  <div class="skill">
-                    <img src="images/Git-Logo.png"/>
-                    <h3>Git</h3>
-                  </div>
-                  <div class="skill">
-                    <img src="images/CSharp-Logo.png"/>
-                    <h3>C#</h3>
-                  </div>
-                  <div class="skill">
-                    <img src="images/Gears.png"/>
-                    <h3>REST APIS</h3>
-                  </div>
-                  <div class="skill">
-                    <img src="images/CLI.png"/>
-                    <h3>CLI</h3>
-                  </div>
-  
+              <div class="skill">
+                <img src="images/java-logo.png" />
+                <h3>Java</h3>
+              </div>
+              <div class="skill">
+                <img src="images/SpringBootLogo.png" />
+                <h3>Spring</h3>
+              </div>
+              <div class="skill">
+                <img src="images/Microservices.png" />
+                <h3>Microservices</h3>
+              </div>
+              <div class="skill">
+                <img src="images/AzureLogo.png" />
+                <h3>Azure</h3>
+              </div>
+
+              <div class="skill">
+                <img src="images/HTML-Logo.png" />
+                <h3>HTML</h3>
+              </div>
+              <div class="skill">
+                <img src="images/CSS-Logo.png" />
+                <h3>CSS</h3>
+              </div>
+
+              <div class="skill">
+                <img src="images/JS-Logo.png" />
+                <h3>JS</h3>
+              </div>
+              <div class="skill">
+                <img src="images/ReactLogo.png" />
+                <h3>React</h3>
+              </div>
+
+              <div class="skill">
+                <img src="images/Git-Logo.png" />
+                <h3>Git</h3>
+              </div>
+              <div class="skill">
+                <img src="images/CSharp-Logo.png" />
+                <h3>C#</h3>
+              </div>
+              <div class="skill">
+                <img src="images/Gears.png" />
+                <h3>REST APIS</h3>
+              </div>
+              <div class="skill">
+                <img src="images/CLI.png" />
+                <h3>CLI</h3>
+              </div>
             </div>
-            </div>
+          </div>
         </section>
         <section class="about-me" id="about-me">
           <h2>About</h2>
           <div class="about-content">
-            <img src="images/PiaCouch.png" alt="Eddy programming with his dog laying on his lap" class="large-about-image">
-            <img src="images/PiaCouchSmall.jpg" alt="Eddy programming with his dog laying on his lap" class="small-about-image">
+            <img
+              src="images/PiaCouch.png"
+              alt="Eddy programming with his dog laying on his lap"
+              class="large-about-image"
+            />
+            <img
+              src="images/PiaCouchSmall.jpg"
+              alt="Eddy programming with his dog laying on his lap"
+              class="small-about-image"
+            />
             <div class="about-text">
-              <p>I am a high school student with a passion for learning new things and a love for programming. When I’m not programming I love backpacking and skiing. On the weekends in the winter I’m a ski instructor at the Summit at Snoqualmie and love watching students go from not being able to step into the skis to being able to easily make it down a hill. When I’m backpacking in the summer the farthest I’ve backpacked was 42 miles but I am excited for an upcoming 70-mile backpacking trip on PCT section J
-</p>
+              <p>
+                I am a high school student with a passion for learning new
+                things and a love for programming. When I’m not programming I
+                love backpacking and skiing. On the weekends in the winter I’m a
+                ski instructor at the Summit at Snoqualmie and love watching
+                students go from not being able to step into the skis to being
+                able to easily make it down a hill. When I’m backpacking in the
+                summer the farthest I’ve backpacked was 42 miles but I am
+                excited for an upcoming 70-mile backpacking trip on PCT section
+                J
+              </p>
               <div class="contact" id="contact">
                 <h2>Contact</h2>
-                <p>Have a question? Send me an email and I’ll respond to you as soon as possible!</p>
-                <form action="https://formsubmit.co/12cc930e93701ab2e79a6c02b86b041c" method="POST" onsubmit=""">
-                  <input type="text" id="name" placeholder="Name" name="name" required>
-                  <input type="email" id="email" placeholder="Email" name="email" required>
-                  <textarea id="message" rows="4" placeholder="Message" name="message"></textarea>
-                  <input type="hidden" name="_next" value="https://eddwalgithubio.cyberpedro.repl.co/#contact">
+                <p>
+                  Have a question? Send me an email and I’ll respond to you as
+                  soon as possible!
+                </p>
+                <form
+                  action="https://formsubmit.co/12cc930e93701ab2e79a6c02b86b041c"
+                  method="POST"
+                  onsubmit=""
+                >
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Name"
+                    name="name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    name="email"
+                    required
+                  />
+                  <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Message"
+                    name="message"
+                  ></textarea>
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://eddwalgithubio.cyberpedro.repl.co/#contact"
+                  />
                   <button type="submit">Submit</button>
                 </form>
               </div>
-              
             </div>
           </div>
         </section>
