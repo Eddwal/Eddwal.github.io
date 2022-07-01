@@ -4,7 +4,6 @@ const phrases = [
   "am a ski instructor",
   "love taking the less walken path",
   "enjoy cooking",
-  "like gaming",
   "a french horn player"
 
 ];
